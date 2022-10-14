@@ -10,14 +10,15 @@ int main(void)
 	int int_val = 0;
 	char char_val = 'a';
 
-	for (; int_val < 10; int_val++)
+	for (; int_val < 10; int_var++)
 	{
-		putchar((int_val % 10) + '0');
+		putchar((int_var % 10) + '0');
 	}
-	for (; char_val <= 'f'; char_val++)
+	for (; char_val <= 'f'; char_var++)
 	{
-		putchar(char_val);
+		putchar(char_var);
 	}
+	putchar('\n');
 
 	return (0);
 }
