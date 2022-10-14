@@ -10,7 +10,7 @@ int main(void)
 
 	val_1 = 0;
 
-	for (; val_1 < 9, val_1++)
+	for (; val_1 < 9; val_1++)
 	{
 		for (val_2 = val_1 + 1; val_2 < 10; val_2++)
 		{
