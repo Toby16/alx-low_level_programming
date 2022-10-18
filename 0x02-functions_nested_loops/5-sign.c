@@ -2,6 +2,7 @@
 
 /**
  * print_sign - Entry
+ * @n: parameter
  * Return: 1, else 0 else -1
  */
 
@@ -22,4 +23,5 @@ int print_sign(int n)
 		putchar('0');
 		return (0);
 	}
+	putchar('\n');
 }
