@@ -9,7 +9,7 @@
 
 int _islower(int c)
 {
-	if ((c >= 'a') && (c <= 'z'))
+	if ((c >= 97) && (c <= 122))
 	{
 		return (1);
 	}
@@ -17,19 +17,4 @@ int _islower(int c)
 	{
 		return (0);
 	}
-}
-
-/**
- * test_islower - function1
- * @n: parameter1
- * Return: Always 0
- */
-void test_islower(int n)
-{
-	int r;
-
-	r = _islower(n);
-
-	putchar(r + '0');
-	putchar('\n');
 }
