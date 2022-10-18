@@ -8,12 +8,7 @@
 
 int _islower(int c)
 {
-	char letter;
-
-	letter = c;
-
-
-	if ((letter >= 'a') && (letter <= 'z'))
+	if ((c >= 'a') && (c <= 'z'))
 	{
 		return (1);
 	}
