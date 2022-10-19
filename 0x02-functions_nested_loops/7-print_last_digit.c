@@ -19,7 +19,7 @@ int print_last_digit(int n)
 	{
 		read = n % 10;
 	}
-	putchar (read + '0');
+	_putchar (read + '0');
 
 	return (read);
 }
