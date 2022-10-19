@@ -1,10 +1,12 @@
 #include "main.h"
+#include "positive_or_negative.c"
 
 /**
  * main - Entry
  * Return: Always 0
  */
 
+void positive_or_negative(int);
 
 int main(void)
 {
