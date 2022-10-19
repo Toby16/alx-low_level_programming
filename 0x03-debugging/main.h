@@ -2,7 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
-
+#include "positive_or_negative.c"
 /**
  * File- main.h
  * @i: integer parameter
