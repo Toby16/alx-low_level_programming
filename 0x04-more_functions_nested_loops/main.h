@@ -1,11 +1,13 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#incude <stdio.h>
+#include <stdio.h>
 
 /**
  * File - main.h
  * Description:  Header file
+ * @c: parameter
+ * Return: c
  */
 
 
