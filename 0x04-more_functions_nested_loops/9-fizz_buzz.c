@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "main.h"
+#include <stdio.h>i
 /**
  * main - Entry
  * Return: 0, if no error
@@ -13,7 +12,7 @@ int main(void)
 	{
 		if (((i % 3) == 0) && ((i % 5) != 0))
 		{
-			printf("Fuzz");
+			printf("Fizz");
 		}
 		else if (((i % 5) == 0) && ((i % 3) != 0))
 		{
