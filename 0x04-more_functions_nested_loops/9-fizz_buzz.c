@@ -1,4 +1,4 @@
-#include <stdio.h>i
+#include <stdio.h>
 /**
  * main - Entry
  * Return: 0, if no error
