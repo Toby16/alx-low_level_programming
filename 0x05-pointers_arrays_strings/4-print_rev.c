@@ -8,7 +8,7 @@
 
 void print_rev(char *s)
 {
-	int i;
+	int i, x;
 
 	i = 0;
 
@@ -20,8 +20,6 @@ void print_rev(char *s)
 		}
 		i++;
 	}
-
-	int x;
 
 	for (x = i - 1; x >= 0; x++)
 	{
