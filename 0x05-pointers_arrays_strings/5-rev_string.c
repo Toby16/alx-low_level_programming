@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * rev_string - function
+ * @s: parameter
+ * Return: Value
+ */
+
 void rev_string(char *s)
 {
 	int x = 0;
