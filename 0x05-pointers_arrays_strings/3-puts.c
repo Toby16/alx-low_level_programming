@@ -5,13 +5,11 @@
  * Return: value
  */
 
-void _puts(char *str)
+void _puts(char *s)
 {
-	int i;
-
-	for (; str[i]; i++)
+	while (*str)
 	{
-		_putchar(str[i]);
+		_putchar(*str++);
 	}
 	_putchar('\n');
 }
