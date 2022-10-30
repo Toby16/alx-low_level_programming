@@ -8,15 +8,16 @@
 
 int _abs(int n)
 {
-	int true_val;
-
-	if (n < 0)
+	if (n > 0)
 	{
-		true_val = (n) * (-1);
-		return (true_val);
+		return (n);
+	}
+	else if (n < 0)
+	{
+		return (n * (-1));
 	}
 	else
 	{
-		return (n);
+		return (0);
 	}
 }
