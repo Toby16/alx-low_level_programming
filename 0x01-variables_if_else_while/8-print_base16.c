@@ -7,18 +7,15 @@
 
 int main(void)
 {
-	int int_val = 0;
-	char char_val = 'a';
+	int a, b;
 
-	for (; int_val < 10; int_val++)
+	for (a = 48; a <= 57; a++)
 	{
-		putchar((int_val % 10) + '0');
+		putchar(a);
 	}
-	for (; char_val <= 'f'; char_val++)
+	for (b = 97; b <= 102; b++)
 	{
-		putchar(char_val);
+		putchar(b);
 	}
 	putchar('\n');
-
-	return (0);
 }
