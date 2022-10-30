@@ -7,19 +7,19 @@
 
 int main(void)
 {
-	char ch_A;
+	int a;
 
-	for (ch_A = 'a'; ch_A <= 'z'; ch_A++)
+	for (a = 97; a <= 122; a++)
 	{
-		if (ch_A == 'e')
+		if (a == 101)
 		{
 			continue;
 		}
-		if (ch_A == 'q')
+		if (a == 113)
 		{
 			continue;
 		}
-		putchar(ch_A);
+		putchar(a);
 	}
 	putchar('\n');
 
