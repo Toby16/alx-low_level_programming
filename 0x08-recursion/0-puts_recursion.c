@@ -10,9 +10,10 @@ void _puts_recursion(char *s)
 {
 	if (s[0] == '\0')
 	{
+		_putchar('\n');
 		return;
 	}
-	if ((s[0] <= 122 && s[0] >= 97) || (s[0] <= 90 && s[0] >= 65))
+	if (s[0] <= 126 && s[0] >= 0)
 	{
 		_putchar(s[0]);
 	}
