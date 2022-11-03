@@ -1,5 +1,6 @@
 #include "main.h"
-
+int is_prime_number(int n);
+int is_prime(unsigned int n, unsigned int c);
 /**
  * is_prime_number - Function
  * @n: parameter
