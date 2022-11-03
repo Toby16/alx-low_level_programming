@@ -8,39 +8,38 @@
 
 int _sqrt_recursion(int n)
 {
-	return (sqrt_wrapper(n, 1, n));
-}
+	int x = 0;
 
-/**
- * sqrt_wrapper - Function
- * @n: parameter 1
- * @min: parameter 2
- * @max: parameter 3
- * Return: value
- */
-
-int sqrt_wrapper(int n, int min, int max)
-{
-	int guess, guess_squared;
-
-	if (max < min)
+	if (n < 0)
 	{
 		return (-1);
 	}
 
-	guess = (min + max) / 2;
-	guess_squared = guess * guess;
+	if (n == 1)
+	{
+		return (1);
+	}
+	return (find_sqrt(n, x));
+}
 
-	if (guess_squared == n)
+/**
+ * find_sqrt - function
+ * @num: parameter
+ * @x: parameter
+ * Return: Value
+ */
+
+int find_sqrt(int num, int x)
+{
+	if ((x * x) == num)
 	{
-		return (guess);
+		return (x);
 	}
-	else if (guess_squared < n)
+
+	if (x == num / 2)
 	{
-		return (sqrt_wrapper(n, guess + 1, max));
+		return (-1);
 	}
-	else
-	{
-		return (sqrt_wrapper(n, min, guess - 1));
-	}
+
+	return (find_sqrt(num, x + 1));
 }
