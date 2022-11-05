@@ -11,9 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int coins_number, val;
-
-	coins_number = 0;
+	int coins_number = 0, val;
 
 	val = atoi(argv[1]);
 
@@ -36,12 +34,16 @@ int main(int argc, char *argv[])
 
 				if (val >= 25)
 					val -= 25;
+					continue;
 				else if (val >= 10)
 					val -= 10;
+					continue;
 				else if (val >= 5)
 					val -= 5;
+					continue;
 				else if (val >= 2)
 					val -= 2;
+					continue;
 				else if (val >= 1)
 					val -= 1;
 			}
