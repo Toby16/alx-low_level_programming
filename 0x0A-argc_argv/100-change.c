@@ -11,40 +11,42 @@
 
 int main(int argc, char *argv[])
 {
-	int val, coins_number = 0;
+	int x, y;
 
-	val = atoi(argv[1]);
+	x = atoi(argv[1]);
+	y = 0;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
-	{
-		if (val < 0)
-		{
-			printf("0\n");
-		}
-		else
-		{
-			while (val > 0)
-			{
-				coins_number += 1;
 
-				if (val >= 25)
-					val -= 25;
-				else if (val >= 10)
-					val -= 10;
-				else if (val >= 5)
-					val -= 5;
-				else if (val >= 2)
-					val -= 2;
-				else if (val >= 1)
-					val -= 1;
-			}
+	while (x > 0)
+	{
+		y += 1;
+		if (x >= 25)
+		{
+			x -= 25;
+		}
+		else if (x >= 10)
+		{
+			x -= 10;
+		}
+		else if (x >= 5)
+		{
+			x -= 5;
+		}
+		else if (x >= 2)
+		{
+			x -= 2;
+		}
+		else if (x >= 1)
+		{
+			x -= 1;
 		}
 	}
-	printf("%d\n", coins_number);
+	printf("%d\n", y);
 	return (0);
 }
+
