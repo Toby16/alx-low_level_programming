@@ -45,10 +45,7 @@ int main(int argc, char *argv[])
 			x -= 2;
 			continue;
 		}
-		if (x >= 1)
-		{
-			x -= 1;
-		}
+		x -= 1;
 	}
 	printf("%d\n", y);
 	return (0);
