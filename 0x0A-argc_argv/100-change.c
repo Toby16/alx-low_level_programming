@@ -21,31 +21,33 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
-	while (x > 0)
+	else
 	{
-		y += 1;
-		if (x >= 25)
+		while (x > 0)
 		{
-			x -= 25;
-			continue;
+			y += 1;
+			if (x >= 25)
+			{
+				x -= 25;
+				continue;
+			}
+			if (x >= 10)
+			{
+				x -= 10;
+				continue;
+			}
+			if (x >= 5)
+			{
+				x -= 5;
+				continue;
+			}
+			if (x >= 2)
+			{
+				x -= 2;
+				continue;
+			}
+				x -= 1;
 		}
-		if (x >= 10)
-		{
-			x -= 10;
-			continue;
-		}
-		if (x >= 5)
-		{
-			x -= 5;
-			continue;
-		}
-		if (x >= 2)
-		{
-			x -= 2;
-			continue;
-		}
-			x -= 1;
 	}
 	printf("%d\n", y);
 	return (0);
