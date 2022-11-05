@@ -28,21 +28,25 @@ int main(int argc, char *argv[])
 		if (x >= 25)
 		{
 			x -= 25;
+			y++;
 			continue;
 		}
 		if (x >= 10)
 		{
 			x -= 10;
+			y++;
 			continue;
 		}
 		if (x >= 5)
 		{
 			x -= 5;
+			y++
 			continue;
 		}
 		if (x >= 2)
 		{
 			x -= 2;
+			y++;
 			continue;
 		}
 		x -= 1;
