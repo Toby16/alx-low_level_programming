@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 		if (x >= 5)
 		{
 			x -= 5;
-			y++
+			y++;
 			continue;
 		}
 		if (x >= 2)
