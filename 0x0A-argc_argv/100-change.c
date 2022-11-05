@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	x = atoi(argv[1]);
 	y = 0;
 
-	if ((argc == 1) || (argc > 2))
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -24,27 +24,28 @@ int main(int argc, char *argv[])
 
 	while (x > 0)
 	{
+		y += 1;
 		if (x >= 25)
 		{
 			x -= 25;
+			continue;
 		}
-		else if (x >= 10)
+		if (x >= 10)
 		{
 			x -= 10;
+			continue;
 		}
-		else if (x >= 5)
+		if (x >= 5)
 		{
 			x -= 5;
+			continue;
 		}
-		else if (x >= 2)
+		if (x >= 2)
 		{
 			x -= 2;
+			continue;
 		}
-		else if (x >= 1)
-		{
-			x -= 1;
-		}
-		y += 1;
+		x -= 1;
 	}
 	printf("%d\n", y);
 	return (0);
