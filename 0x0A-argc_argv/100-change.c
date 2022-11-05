@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 				else if (val >= 10)
 					val -= 10;
 				else if (val >= 5)
-					val -= 5
+					val -= 5;
 				else if (val >= 2)
 					val -= 2;
 				else if (val >= 1)
