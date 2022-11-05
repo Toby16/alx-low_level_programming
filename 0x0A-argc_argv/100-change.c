@@ -24,7 +24,6 @@ int main(int argc, char *argv[])
 
 	while (x > 0)
 	{
-		y += 1;
 		if (x >= 25)
 		{
 			x -= 25;
@@ -45,6 +44,7 @@ int main(int argc, char *argv[])
 		{
 			x -= 1;
 		}
+		y += 1;
 	}
 	printf("%d\n", y);
 	return (0);
