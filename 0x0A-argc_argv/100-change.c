@@ -34,16 +34,12 @@ int main(int argc, char *argv[])
 
 				if (val >= 25)
 					val -= 25;
-					continue;
 				else if (val >= 10)
 					val -= 10;
-					continue;
 				else if (val >= 5)
-					val -= 5;
-					continue;
+					val -= 5
 				else if (val >= 2)
 					val -= 2;
-					continue;
 				else if (val >= 1)
 					val -= 1;
 			}
