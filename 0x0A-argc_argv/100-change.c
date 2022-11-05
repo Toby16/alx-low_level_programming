@@ -48,8 +48,8 @@ int main(int argc, char *argv[])
 			}
 				x -= 1;
 		}
+		printf("%d\n", y);
 	}
-	printf("%d\n", y);
 	return (0);
 }
 
