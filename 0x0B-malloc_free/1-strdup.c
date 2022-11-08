@@ -9,11 +9,12 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int i, j;
+	int i, j, k;
 
 	j = 0;
+	k = (int)(sizeof(*str));
 
-	for (; str[j]; j++)
+	for (; j < k; j++)
 	{
 		j += 1;
 	}
@@ -24,7 +25,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	
+
 	if (ptr == 0)
 	{
 		return (NULL);
@@ -36,5 +37,7 @@ char *_strdup(char *str)
 			ptr[i] = str[i];
 		}
 	}
+	free(ptr);
+
 	return (ptr);
 }
