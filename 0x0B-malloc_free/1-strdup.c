@@ -9,24 +9,23 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int i, j, k;
+	int i, j;
 
 	j = 0;
-	k = (int)(sizeof(*str));
-
-	for (; j < k; j++)
-	{
-		j += 1;
-	}
-
-	ptr = malloc(sizeof(*str) * (j + 1));
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	if (ptr == 0)
+	for (i = 0; str[i]; i++)
+	{
+		j += 1;
+	}
+
+	ptr = malloc(sizeof(*ptr) * j);
+
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
