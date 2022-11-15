@@ -4,6 +4,12 @@
 #include <stdlib.h>
 
 /**
+ * dog_t - Typedef for struct dog
+ */
+
+typedef struct dog dog_t;
+
+/**
  * struct dog - structure
  * @name: element
  * @age: element
