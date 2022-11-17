@@ -25,10 +25,7 @@ int (*get_op_func(char *s))(int, int)
 		{
 			break;
 		}
-		else
-		{
-			i++;
-		}
+		i++;
 	}
 	return (opp[i / 2].f);
 }
