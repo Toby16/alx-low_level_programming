@@ -15,9 +15,10 @@ void print_all(const char * const format, ...)
 {
 	va_list list;
 	int x, y;
+	char *separator;
 
-	char *separator = "";
 	x = 0;
+	separator = "";
 
 	printer_t funcs[] = {
 		{"i", _int},
