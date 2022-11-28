@@ -3,29 +3,26 @@
 /**
  * print_list - Function
  * @h: parameter
- * Return: node
+ * Return: i
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t node;
+	unsigned int i;
 
-	node = 0;
-
-	while (h != NULL)
+	for (i  0; h; i++)
 	{
-		if (h->str == NULL)
-		{
-			printf("[0] (nil)\n");
-		}
-		else
+		if (h->str)
 		{
 			printf("[%d] %s\n", h->len, h->str);
 		}
+		else
+		{
+			printf("[0] (nil)\n");
+		}
 
 		h = h->next;
-		node += 1;
 	}
-	return (node);
+	return (i);
 }
 
