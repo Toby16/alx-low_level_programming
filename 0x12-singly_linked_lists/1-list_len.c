@@ -3,19 +3,16 @@
 /**
  * list_len - Function
  * @h: parameter
- * Return: elem_num
+ * Return: i
  */
 
 size_t list_len(const list_t *h)
 {
-	size_t elem_num;
+	unsigned int i;
 
-	elem_num = 0;
-
-	while (h != NULL)
+	for (i = 0; h; i++)
 	{
 		h = h->next;
-		elem_num += 1;
 	}
-	return (elem_num);
+	return (i);
 }
