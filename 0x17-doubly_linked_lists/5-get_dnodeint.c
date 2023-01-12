@@ -12,33 +12,25 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *temp;
-	unsigned int i, num_of_nodes;
+	unsigned int i;
 
-	if (head == NULL)
-	{
-		return (NULL);
-	}
-	else
-	{
-		temp = head;
-		num_of_nodes = dlistint_len(head);
+	temp = head;
+	i = 0;
 
-		if (index >= num_of_nodes)
+	while (temp != NULL)
+	{
+		if (i == index)
 		{
-			return (NULL);
+			return (temp);
 		}
 		else
 		{
-
-			for (i = 0; temp != NULL; i++)
-			{
-				temp = temp->next;
-				if (i == index)
-				{
-					return (temp);
-				}
-			}
+			temp = temp->next;
+			i += 1;
 		}
 	}
-	return (temp);
+	if (index >= dlistint_len(head))
+	{
+		return (NULL);
+	}
 }
