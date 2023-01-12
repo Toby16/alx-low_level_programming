@@ -29,9 +29,5 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 			i += 1;
 		}
 	}
-	if (index >= dlistint_len(head))
-	{
-		return (NULL);
-	}
 	return (NULL);
 }
