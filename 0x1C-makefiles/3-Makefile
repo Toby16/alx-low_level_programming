@@ -2,7 +2,7 @@ CC=gcc
 SRC=main.c school.c
 OBJ=${SRC:.c=.o}
 NAME=SCHOOL
-RM:rm -f
+RM=rm -f
 
 all: $(NAME)
 
